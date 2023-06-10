@@ -14,9 +14,13 @@ namespace Assignment8_1
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            OrderManager orderManager = new OrderManager();
+            orderManager.AddOrder("mzh", "lyw");
         }
     }
 }
